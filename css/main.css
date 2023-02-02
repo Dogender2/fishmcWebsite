@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(15, 8, 34);
+  background: linear-gradient(0deg, rgb(15, 8, 34) 0%, rgb(25, 14, 55) 100%);
+  background-image: url("./../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+body#regulamin {
+  background: rgb(15, 8, 34);
+  background: linear-gradient(0deg, rgb(15, 8, 34) 0%, rgb(25, 14, 55) 100%);
+  background-image: url("./../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 20px 100px;
+  z-index: 100000;
+  background-color: rgb(15, 8, 34);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Kanit", sans-serif;
+}
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header.sticky1 {
+  padding: 5px 100px;
+  background: rgba(15, 8, 34, 0.603);
+}
+header.sticky1.logo, header.sticky1 #fishmclogo {
+  opacity: 0;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transform: 0.6s;
+}
+header ul li a:hover {
+  color: #e4e4e4;
+}
+
+#fishmclogo {
+  height: auto;
+  width: 70px;
+  transition: 1s;
+}
+
+#discordBtn1 {
+  color: rgb(15, 8, 34);
+  background-color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: 0.6s;
+}
+#discordBtn1:hover {
+  color: #fff;
+  background-color: rgb(15, 8, 34);
+  padding-left: 20px;
+}
+
+.odstep {
+  margin-top: 40px;
+}
+
+.container {
+  background-color: rgba(15, 8, 34, 0.555);
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 200px;
+  transition: 0.6s;
+  margin-bottom: 120px;
+}
+
+.description {
+  margin-top: 100px;
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+}
+.description .bigText1 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.description .normalText1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 23px;
+  font-weight: 100;
+}
+.description .normalText1 #skinImg {
+  margin-top: -100px;
+  height: auto;
+  width: 30%;
+  -webkit-animation: gora_dol 4s infinite;
+          animation: gora_dol 4s infinite;
+}
+
+.description2 {
+  margin-top: 100px;
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+}
+.description2 .bigText2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+.description2 .rules {
+  width: 100%;
+}
+.description2 .par {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.904);
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.description2 .podpar {
+  font-size: 20px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.904);
+  margin-left: 140px;
+}
+.description2 .person {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+
+.server-team .server-list {
+  list-style: none;
+  padding: 0;
+}
+.server-team .server-list .server-item {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: rgb(15, 8, 34);
+  border-radius: 10px;
+  display: flex;
+  min-height: 60px;
+  justify-content: center;
+  padding: 20px 20px;
+}
+.server-team .server-list .server-item__name {
+  margin: 0;
+}
+.server-team .server-list .server-item__details {
+  padding: 20px 20px;
+  margin-left: 100px;
+  display: none;
+  position: absolute;
+  left: 100%;
+  color: rgb(15, 8, 34);
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 10px;
+  border-radius: 10px;
+}
+.server-team .server-list .server-item:hover__details {
+  display: block;
+}
+
+.server-item__details {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  background-color: #8E44AD;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*
+  Footer
+*/
+.container_footer {
+  font-family: "Kanit", sans-serif;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row ul {
+  list-style: none;
+}
+
+.footer {
+  background: rgb(15, 8, 34);
+  background: linear-gradient(0deg, rgb(15, 8, 34) 0%, rgb(25, 14, 55) 100%);
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: rgb(209, 209, 209);
+  height: 2px;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: rgb(15, 8, 34);
+  background-color: #ffffff;
+}
+
+.glow {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+          animation: glow 1s ease-in-out infinite alternate;
+  font-family: "Kanit", sans-serif;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #dd66ef, 0 0 40px #d953ef, 0 0 50px #f258ff, 0 0 60px #dd66ef, 0 0 70px #dd66ef;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #38285a, 0 0 40px #4f3880, 0 0 50px #392b5b, 0 0 60px #7651db, 0 0 70px #8e50e2, 0 0 80px #3d2d63;
+  }
+}
+@-webkit-keyframes gora_dol {
+  0% {
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+}
+@keyframes gora_dol {
+  0% {
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  50% {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(25, 14, 55);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(20, 11, 46);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(35, 20, 75);
+}
+
+@media (max-width: 1500px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 120px;
+  }
+  .description {
+    margin-top: 100px;
+  }
+  .description .bigText1 {
+    font-size: 35px;
+  }
+  .description .normalText1 {
+    font-size: 23px;
+  }
+  .description .normalText1 #skinImg {
+    width: 20%;
+    margin-top: -200px;
+  }
+}
+@media (max-width: 950px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    transition: 0.6s;
+    padding: 20px 20px;
+  }
+  header.sticky1 {
+    padding: 5px 10px;
+  }
+  header.sticky1.logo, header.sticky1 #fishmclogo {
+    opacity: 0;
+  }
+  header .logo {
+    font-size: 23px;
+    letter-spacing: 2px;
+  }
+  header ul li a {
+    margin: 0 5px;
+    letter-spacing: 2px;
+  }
+  #regulamin .container {
+    width: 95%;
+  }
+  #faq .container {
+    width: 95%;
+  }
+  .description2 {
+    margin-top: 50px;
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+  }
+  .description2 .bigText2 {
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .description2 .rules {
+    width: 100%;
+  }
+  .description2 .par {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.904);
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .description2 .podpar {
+    font-size: 20px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.904);
+    margin-left: 30px;
+  }
+  .description2 .person {
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+  }
+}
+@media (max-width: 700px) {
+  .description {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+  .description .bigText1 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .description .normalText1 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+  .description .normalText1 #skinImg {
+    display: none;
+  }
+  header {
+    display: flex;
+    padding: 20px 20px;
+  }
+  header.sticky1 {
+    padding: 5px 10px;
+  }
+  header.sticky1.logo, header.sticky1 #fishmclogo {
+    opacity: 0;
+  }
+  header .logo {
+    font-size: 23px;
+    letter-spacing: 2px;
+  }
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+  header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transform: 0.6s;
+    float: none;
+    display: block;
+    text-align: left;
+    text-align: right;
+  }
+  #admin .glow {
+    font-size: 30px;
+  }
+  #admin .container {
+    padding: 2px;
+  }
+  #admin .description2 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  #admin .bigText2 {
+    font-size: 20px;
+  }
+  .server-team .server-list .server-item {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 10px;
+    min-height: 30px;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .server-team .server-list .server-item__name {
+    margin: 0;
+  }
+  .server-team .server-list .server-item__details {
+    padding: 20px 20px;
+    margin-left: 11px;
+    display: none;
+    position: absolute;
+    left: 100%;
+    color: rgb(15, 8, 34);
+    background-color: rgba(255, 255, 255, 0.61);
+    padding: 10px;
+    font-size: 12px;
+  }
+  .server-team .server-list .server-item:hover__details {
+    display: block;
+  }
+  .server-item__details {
+    right: 100%;
+    padding: 5px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    display: flex;
+    padding: 20px 0px;
+  }
+  header.sticky1 {
+    padding: 5px 0px;
+  }
+  header.sticky1.logo, header.sticky1 #fishmclogo {
+    opacity: 0;
+  }
+  header .logo {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+  header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transform: 0.6s;
+    float: none;
+    display: block;
+    text-align: left;
+    text-align: right;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 20px;
+    margin-top: 200px;
+    margin-bottom: 120px;
+  }
+  .container .description {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+  }
+  .container .description .bigText1 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .container .description .normalText1 {
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .container .glow {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+    font-family: "Kanit", sans-serif;
+  }
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
